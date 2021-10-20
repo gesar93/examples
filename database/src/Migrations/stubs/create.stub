@@ -1,0 +1,31 @@
+<?php
+
+use Zionec\Database\Builder;
+use Zionec\Database\Migrations\Migrator;
+
+class DummyClass extends Migrator
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        $builder = new Builder();
+        if(!$builder->hasTable('DummyTable')) {
+            $builder->create('DummyTable');
+        }
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        $builder = new Builder();
+        $builder->dropIfExists('DummyTable');
+    }
+}

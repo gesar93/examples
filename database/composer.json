@@ -1,0 +1,13 @@
+{
+    "name": "zionec/database",
+    "description": "Tarantool lib for laravel/lumen framework",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ilia Donskikh",
+            "email": "gesar.93@mail.ru"
+        }
+    ],
+    "require": {}
+}
